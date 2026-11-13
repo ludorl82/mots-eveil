@@ -7,9 +7,8 @@ voix de synthèse libres et des données libres**. Tu donnes une phrase
 YAML ESPHome et un rapport qui dit, chiffres à l'appui, **ce qui est mesuré et
 surtout ce qui ne l'est pas**.
 
-> **État : dépôt privé, pas encore audité pour publication.** Rien ici n'est
-> public tant que le propriétaire du dépôt n'a pas donné son accord explicite. Code sous licence
-> **MIT** (voir plus bas).
+> **État : public.** Code sous licence **MIT** (voir plus bas). Deux points de
+> licence des données restent à confirmer (échos MIT, MUSAN `music`) : voir « Sources de données ».
 
 ## Ce que ça fait
 
@@ -75,9 +74,9 @@ dossiers, et `entraineur/test_public.py` (CI `garde`).
 | [DEMAND](https://zenodo.org/records/1227121) | bruits de pièces et d'extérieur | CC BY 4.0 |
 | [MIT IR Survey](https://huggingface.co/datasets/davidscripka/MIT_environmental_impulse_responses) | échos de pièce | **À CONFIRMER** : la fiche Hugging Face dit « unknown » et la page du MIT n'en dit rien ; CC BY 4.0 annoncé ailleurs, non vérifié |
 
-À vérifier avant toute publication (voir « Avant de rendre public ») : la licence
-des échos MIT, et le fait que la partie `music` de MUSAN ne mélange pas des
-licences incompatibles.
+Encore à vérifier : la licence des échos MIT, et le fait que la partie `music`
+de MUSAN ne mélange pas des licences incompatibles. Ce dépôt ne contient aucun
+fichier de ces jeux : il les télécharge à l'exécution depuis leur source.
 
 ## Données écartées, et pourquoi
 
@@ -120,9 +119,3 @@ Le code est sous licence **MIT** (fichier [`LICENSE`](LICENSE)). Les données et
 les voix gardent leurs propres licences (tableau ci-dessus), et un modèle produit
 en hérite : le rapport de chaque entraînement les liste. Piper (GPL-3.0) est un
 outil lancé dans un venv à part, pas lié au code de ce dépôt.
-
-## Avant de rendre public
-
-- [ ] accord explicite du propriétaire ;
-- [ ] licence des échos MIT confirmée ; MUSAN `music` vérifié ;
-- [ ] audit refait sur le dépôt entier et son historique.
