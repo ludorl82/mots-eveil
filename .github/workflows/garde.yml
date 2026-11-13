@@ -1,0 +1,20 @@
+# La garde de l'entraîneur (entraineur/test_public.py) : aucune donnée privée
+# ne doit pouvoir entrer dans un modèle. Seulement numpy : entrainer.py
+# n'importe TensorFlow qu'au besoin.
+name: garde
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  garde:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install --quiet numpy==2.2.6
+      - run: python3 entraineur/test_public.py -v
+      - run: pip install --quiet pyflakes==3.4.0 && python3 -m pyflakes entraineur/
+      - run: bash -n installer.sh
