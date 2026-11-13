@@ -8,8 +8,8 @@ YAML ESPHome et un rapport qui dit, chiffres à l'appui, **ce qui est mesuré et
 surtout ce qui ne l'est pas**.
 
 > **État : dépôt privé, pas encore audité pour publication.** Rien ici n'est
-> public tant que le propriétaire du dépôt n'a pas donné son accord explicite. Licence du code :
-> **à choisir** (voir plus bas).
+> public tant que le propriétaire du dépôt n'a pas donné son accord explicite. Code sous licence
+> **MIT** (voir plus bas).
 
 ## Ce que ça fait
 
@@ -116,14 +116,13 @@ cible n'était pas tenue (2,00 > 0,5) : corrigé depuis dans `rapport_public_md`
 
 ## Licence
 
-Le code n'a **pas encore de licence** : choix en attente (MIT proposé par défaut).
-Sans fichier `LICENSE`, personne n'a le droit de le réutiliser. Les données et
+Le code est sous licence **MIT** (fichier [`LICENSE`](LICENSE)). Les données et
 les voix gardent leurs propres licences (tableau ci-dessus), et un modèle produit
-en hérite : le rapport de chaque entraînement les liste.
+en hérite : le rapport de chaque entraînement les liste. Piper (GPL-3.0) est un
+outil lancé dans un venv à part, pas lié au code de ce dépôt.
 
 ## Avant de rendre public
 
 - [ ] accord explicite du propriétaire ;
-- [ ] licence du code choisie (`LICENSE`) ;
 - [ ] licence des échos MIT confirmée ; MUSAN `music` vérifié ;
 - [ ] audit refait sur le dépôt entier et son historique.
